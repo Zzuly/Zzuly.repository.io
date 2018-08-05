@@ -160,11 +160,16 @@
 
 <div class="comments">
     <h3 class="title is-4">Comments</h3>
-    
-    <div class="notification is-danger">
-        You forgot to set the <code>appId</code> or <code>appKey</code> for Valine. Please set it in <code>_config.yml</code>.
-    </div>
-
+    <div id="valine-thread"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        app_id: '31zqyMiT2kc7oWw3QihC9s2n-gzGzoHsz',
+        app_key: '898mhCFw4B1xQc26sStsqGoU',
+    });
+</script>
 
 </div>
 
